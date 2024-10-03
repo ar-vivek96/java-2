@@ -1,0 +1,67 @@
+package dataStructrue;
+
+public class LinearSearch {
+	
+	public static int find(int arr[],int target)
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]==target)
+				return i;
+		}
+		return -1;
+	}
+	
+	public static boolean contains(int arr[],int target)
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]==target)
+				return true;
+		}
+		return false;
+		
+	}
+	public static int find(String arr1[],String target)
+	{
+		for(int i=0;i<arr1.length;i++)
+		{
+			if(arr1[i]==target)
+				return i;
+		}
+		return -1;
+	}
+	public static int find(String str,char target)
+	{
+		for(int i=0;i<str.length();i++)
+		{
+			if(str.charAt(i)==target)
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+	public static boolean contains( String str,char target)
+	{
+		for(int i=0;i<str.length();i++)
+		{
+			if(str.charAt(i)==target)
+				return true;
+		}
+		return false;
+	}
+	
+	public static int [] find(int arr[][],int a)
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<arr[i].length;j++)
+			{
+				if(arr[i][j]==a)
+					return new int [] {i,j};
+			}
+		}
+		return new int[] {-1,-1};
+	}
+}
